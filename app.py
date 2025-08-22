@@ -93,7 +93,7 @@ def main():
     st.title("Nhận Diện Biển Số Xe")
     api_key = os.getenv("GEMINI_API_KEY") or st.text_input("GEMINI_API_KEY", type="password")
     if not api_key:
-        st.info("Nhập GEMINI_API_KEY hoặc cấu hình biến môi trường khi deploy.")
+        st.info("Nhập GEMINI_API_KEY.")
         return
     try:
         gemini = GeminiModel(api_key)
